@@ -1,0 +1,1058 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="InvenioRDM user documentation web site">
+      
+      
+        <link rel="canonical" href="https://inveniordm.docs.cern.ch/develop/customize/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Customization - User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../css/version-select.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#customization" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://inveniordm.docs.cern.ch" title="User Documentation" aria-label="User Documentation" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../images/logo-rdm.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Customization
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/inveniosoftware/docs-invenio-rdm/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    docs-invenio-rdm
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../install/" class="md-tabs__link">
+          Install
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../preview/" class="md-tabs__link">
+          Preview
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" class="md-tabs__link md-tabs__link--active">
+          Develop
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../extensions/" class="md-tabs__link">
+          Extensions
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../deployment/" class="md-tabs__link">
+          Deploy
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://inveniordm.docs.cern.ch" title="User Documentation" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../images/logo-rdm.png" width="48" height="48">
+      
+    </a>
+    User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/inveniosoftware/docs-invenio-rdm/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    docs-invenio-rdm
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Install
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Install
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../install/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Preview
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Preview
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../preview/" title="Quick preview of InvenioRDM" class="md-nav__link">
+      Quick preview of InvenioRDM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Develop
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Develop
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install_locally/" title="Install Locally" class="md-nav__link">
+      Install Locally
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../run/" title="Run" class="md-nav__link">
+      Run
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Customization
+      </label>
+    
+    <a href="./" title="Customization" class="md-nav__link md-nav__link--active">
+      Customization
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#update-the-logo" class="md-nav__link">
+    Update the logo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-colors" class="md-nav__link">
+    Change colors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-search-results" class="md-nav__link">
+    Change search results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-the-record-landing-page" class="md-nav__link">
+    Change the record landing page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-functionality" class="md-nav__link">
+    Change functionality
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshoot/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cleanup/" title="Cleanup" class="md-nav__link">
+      Cleanup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extensions/" title="What can be added?" class="md-nav__link">
+      What can be added?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extensions/custom/" title="Add your extensions" class="md-nav__link">
+      Add your extensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extensions/s3/" title="S3 Storage" class="md-nav__link">
+      S3 Storage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Deploy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Deploy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/" title="How can I deploy it?" class="md-nav__link">
+      How can I deploy it?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/openshift/" title="OpenShift" class="md-nav__link">
+      OpenShift
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/kubernetes/" title="Kubernetes" class="md-nav__link">
+      Kubernetes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/services/" title="System components" class="md-nav__link">
+      System components
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/image/" title="Building your image" class="md-nav__link">
+      Building your image
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/registries/" title="Image registries" class="md-nav__link">
+      Image registries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../deployment/benchmark/" title="Benchmarking" class="md-nav__link">
+      Benchmarking
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#update-the-logo" class="md-nav__link">
+    Update the logo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-colors" class="md-nav__link">
+    Change colors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-search-results" class="md-nav__link">
+    Change search results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-the-record-landing-page" class="md-nav__link">
+    Change the record landing page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-functionality" class="md-nav__link">
+    Change functionality
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/inveniosoftware/docs-invenio-rdm/edit/master/docs/develop/customize.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h1>
+<p>As we just saw, overriding configured values is an easy and common way of customizing your instance to your needs. Sometimes, however, you need to provide custom files too: logos, templates... We show how to perform these custom changes.</p>
+<h2 id="update-the-logo">Update the logo<a class="headerlink" href="#update-the-logo" title="Permanent link">&para;</a></h2>
+<p>We are going to change the logo. Take an <em>svg</em> file and copy it to your <strong>local</strong> static files. You can use the <a href="https://github.com/inveniosoftware/invenio-theme/raw/master/invenio_theme/static/images/invenio-color.svg">invenio color logo</a>:</p>
+<div class="codehilite"><pre><span></span><code>cp ./path/to/new/color/logo.svg static/images/logo.svg
+</code></pre></div>
+
+
+<p>Then, use the <code>update</code> command:</p>
+<div class="codehilite"><pre><span></span><code>invenio-cli update --no-install-js
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code><span class="gp">#</span> Summarized output
+<span class="go">Collecting statics and assets...</span>
+<span class="go">Collect static from blueprints.</span>
+<span class="go">Created webpack project.</span>
+<span class="go">Copying project statics and assets...</span>
+<span class="go">Symlinking assets/...</span>
+<span class="go">Building assets...</span>
+<span class="go">Built webpack project.</span>
+</code></pre></div>
+
+
+<p>Passing the <code>--no-install-js</code> option, skips re-installation of JS dependencies.</p>
+<p>Go to the browser <a href="https://localhost:5000"><em>https://localhost:5000/</em></a> or refresh the page. And voilà! The logo has been changed!</p>
+<div class="admonition warning">
+<p class="admonition-title">That evil cache</p>
+<p>If you do not see it changing, check in an incognito window; the browser might have cached the logo.</p>
+</div>
+<h2 id="change-colors">Change colors<a class="headerlink" href="#change-colors" title="Permanent link">&para;</a></h2>
+<p>You might also be wondering: <em>How do I change the colors so I can make my instance look like my institution's theme?</em></p>
+<p>We are going to change the top header section in the frontpage to apply our custom background color. Open the <code>assets/scss/&lt;your instance shortname&gt;/variables.scss</code> file and edit it as below:</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">$navbar_background_image</span><span class="o">:</span> <span class="n">unset</span><span class="p">;</span>
+<span class="nv">$navbar_background_color</span><span class="o">:</span> <span class="mh">#000000</span><span class="p">;</span> <span class="c1">// Note this hex value is an example. Choose yours.</span>
+</code></pre></div>
+
+
+<p>Then, run the <code>invenio-cli update</code> command as above and refresh the page! You should be able to see your top header's color changed! You can find all the available styling variables that you can change <a href="https://github.com/inveniosoftware/invenio-app-rdm/blob/master/invenio_app_rdm/theme/assets/scss/invenio_app_rdm/variables.scss">here</a>.</p>
+<h2 id="change-search-results">Change search results<a class="headerlink" href="#change-search-results" title="Permanent link">&para;</a></h2>
+<p>Changing how your results are presented in the search page is also something quite common.</p>
+<p>We are going to update the search result template so we can show more text in the result's description. Create a file called <code>ResultsItemTemplate.jsx</code> inside <code>assets/templates/search</code> folder and then edit it as below:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">Item</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;semantic-ui-react&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">_truncate</span> <span class="nx">from</span> <span class="s1">&#39;lodash/truncate&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">ResultsItemTemplate</span><span class="p">(</span><span class="nx">record</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Item</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span><span class="p">}</span> <span class="nx">href</span><span class="o">=</span><span class="p">{</span><span class="sb">`/records/</span><span class="si">${</span><span class="nx">record</span><span class="p">.</span><span class="nx">id</span><span class="si">}</span><span class="sb">`</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Item</span><span class="p">.</span><span class="nx">Content</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Item</span><span class="p">.</span><span class="nx">Header</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">record</span><span class="p">.</span><span class="nx">metadata</span><span class="p">.</span><span class="nx">titles</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/Item.Header&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Item</span><span class="p">.</span><span class="nx">Description</span><span class="o">&gt;</span>
+          <span class="p">{</span><span class="nx">_truncate</span><span class="p">(</span><span class="nx">record</span><span class="p">.</span><span class="nx">metadata</span><span class="p">.</span><span class="nx">descriptions</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">description</span><span class="p">,</span> <span class="p">{</span> <span class="nx">length</span><span class="o">:</span> <span class="mi">400</span> <span class="p">})}</span>
+        <span class="o">&lt;</span><span class="err">/Item.Description&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Item.Content&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Item&gt;</span>
+  <span class="p">)</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+<p>Then, run the <code>invenio-cli update</code> command as above and refresh the page! You should be able to see more text in each result's description! You can find all the available templates <a href="https://github.com/inveniosoftware/invenio-app-rdm/tree/master/invenio_app_rdm/theme/assets/templates/search">here</a>.</p>
+<h2 id="change-the-record-landing-page">Change the record landing page<a class="headerlink" href="#change-the-record-landing-page" title="Permanent link">&para;</a></h2>
+<p>When you click on a search result, you navigate in the details page of a specific record. This section shows you how to change the way the information is displayed in the details page.</p>
+<p>We are going to configure our instance to use our template for displaying the information in the record's landing page. Open the <code>invenio.cfg</code> file and add the below:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">invenio_rdm_records.config</span> <span class="kn">import</span> <span class="n">RECORDS_UI_ENDPOINTS</span>
+<span class="n">RECORDS_UI_ENDPOINTS</span><span class="p">[</span><span class="s1">&#39;recid&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="s1">&#39;my_record_landing_page.html&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Then, we create a file <code>my_record_landing_page.html</code> inside the <code>templates</code> folder and edit it as below:</p>
+<div class="codehilite"><pre><span></span><code><span class="cp">{%</span>- <span class="k">extends</span> <span class="s1">&#39;invenio_rdm_records/record_landing_page.html&#39;</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span>- <span class="k">block</span> <span class="nv">page_body</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">&lt;!-- // Paste your code here --&gt;</span>
+<span class="cp">{%</span>- <span class="k">endblock</span> <span class="nv">page_body</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+
+
+<p>Inside the <code>page_body</code> block you can restructure the page as you want! You can check the default record landing page template <a href="https://github.com/inveniosoftware/invenio-rdm-records/blob/master/invenio_rdm_records/theme/templates/invenio_rdm_records/record_landing_page.html">here</a>.</p>
+<p>Since we modified <code>invenio.cfg</code>, we need to re-start the server to see our changes take effect:</p>
+<div class="codehilite"><pre><span></span><code>^C
+Stopping server and worker...
+Server and worker stopped...
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code>invenio-cli run
+</code></pre></div>
+
+
+<h2 id="change-functionality">Change functionality<a class="headerlink" href="#change-functionality" title="Permanent link">&para;</a></h2>
+<p>Need further customizations? Have you thought of creating your own extensions?</p>
+<p>How to make an extension and add it to your InvenioRDM instance is explained in the <a href="../../extensions/custom/">Extensions section</a>.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
+        
+          <a href="../config/"
+              title="Configuration"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Configuration
+              </span>
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+          <a href="../troubleshoot/"
+              title="Troubleshooting"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Troubleshooting
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 CERN and Northwestern University.
+          </div>
+        
+      </div>
+
+      <!-- Social links -->
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/inveniosoftware" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/inveniosoftware" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://invenio-talk.web.cern.ch/c/projects/invenio-rdm" target="_blank" rel="noopener" title="comments" class="md-footer-social__link fa fa-comments"></a>
+    
+      <a href="https://inveniosoftware.org/products/rdm/" target="_blank" rel="noopener" title="globe" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"../.."}})</script>
+      
+        <script src="../../js/version-select.js"></script>
+      
+    
+  </body>
+</html>
